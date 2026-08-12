@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3E275A" />
+    <title>Renata Abreu 2020 — Deputada Federal por São Paulo</title>
+    <meta
+      name="description"
+      content="Deputada federal por São Paulo, eleita três vezes. Mais de 700 propostas legislativas e 7 leis federais sancionadas pela proteção das mulheres, das pessoas com deficiência e das vítimas."
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://renataabreu2020.com.br/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Renata Abreu 2020 — Deputada Federal por São Paulo" />
+    <meta
+      property="og:description"
+      content="Trabalho de verdade pela proteção das mulheres, das pessoas com deficiência e das vítimas, além da saúde e educação."
+    />
+    <meta property="og:image" content="/img/renata-900.v1.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- LCP: a foto do herói entra antes do JS terminar de hidratar. -->
+    <link
+      rel="preload"
+      as="image"
+      href="/img/renata-900.v1.webp"
+      type="image/webp"
+      fetchpriority="high"
+      media="(min-width: 768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/img/renata-560.v1.webp"
+      type="image/webp"
+      fetchpriority="high"
+      media="(max-width: 767px)"
+    />
+
+    <style>
+      /* Pinta o fundo do herói no primeiro frame, sem esperar o CSS principal. */
+      html {
+        background: #3e275a;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

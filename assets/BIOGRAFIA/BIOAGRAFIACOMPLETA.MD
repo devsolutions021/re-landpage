@@ -1,0 +1,18 @@
+RENATA ABREU – BIOGRAFIA COMPLETA
+
+Advogada, administradora, mãe de três filhos e presidente nacional do Podemos, Renata Abreu está em seu terceiro mandato como deputada federal por São Paulo. Formada em Direito pelo Mackenzie, em Administração pela Fundação Getulio Vargas (FGV) e pós-graduada em Direito Eleitoral, tornou-se uma das mulheres mais influentes da política brasileira.
+Sua trajetória parlamentar é marcada principalmente pela defesa intransigente das mulheres e pelo combate à violência de gênero. Renata é autora de leis que se transformaram em marcos na proteção feminina no Brasil.
+Entre elas, destaca-se a Lei da Importunação Sexual, que transformou em crime condutas antes tratadas apenas como contravenção, garantindo punição com prisão para agressores. Também é autora da lei que obriga profissionais de saúde a notificarem casos suspeitos de violência doméstica às autoridades policiais em até 24 horas e da lei que direciona recursos do Fundo Nacional de Segurança Pública para ações de combate à violência contra a mulher.
+Nos últimos anos, Renata ampliou sua atuação no enfrentamento ao feminicídio, liderando mobilizações nacionais, debates públicos e iniciativas legislativas voltadas à proteção das mulheres brasileiras. Tornou-se uma das vozes mais ativas do Congresso Nacional na defesa da vida, da segurança e da dignidade feminina. 
+Como presidente nacional do Podemos, Renata consolidou sua liderança partidária. Sob seu comando, o partido viveu um dos períodos de maior crescimento político de sua história, ampliando sua representatividade em todo o Brasil e fortalecendo suas bancadas durante a recente janela partidária.
+Foi a primeira mulher a integrar o Colégio de Líderes da Câmara dos Deputados e segue como a única mulher entre os principais presidentes nacionais de partidos políticos do país.
+Sua liderança ganhou reconhecimento internacional ao ser a única mulher brasileira da política convidada para participar de um importante encontro do LIDE, realizado em Nova York, ao lado de empresários, investidores e lideranças globais.
+Renata se destaca na defesa da inclusão e dos direitos das pessoas com deficiência. É autora do projeto que assegura validade permanente para laudos médicos de pessoas com deficiências irreversíveis, como autismo, paralisia cerebral e Síndrome de Down. Também propôs o Estatuto das Pessoas com Doenças Raras e projetos voltados à ampliação do teletrabalho para pessoas com deficiência.
+É autora das leis que garante apoio psicológico a gestantes e mães no pré e pós-parto; da Custas Zero para a Advocacia e da que estabelece a humanização em todas as etapas do atendimento no SUS.
+Na causa animal, é autora de propostas como a Farmácia Popular Veterinária e o SUS Animal.
+Eleita Brasileira do Ano pela Ordem dos Economistas do Brasil (2025), recebeu reconhecimento por sua atuação política pautada no Capitalismo Humanista, modelo que coloca a dignidade da pessoa humana como valor central.
+Com uma trajetória marcada pela ação, pelo diálogo e pela construção de resultados concretos, Renata Abreu consolidou-se como uma das principais lideranças femininas da política nacional.
+Fora do Congresso, também lidera projetos sociais no Centro de Tradições Nordestinas (CTN), em São Paulo, com ações voltadas à educação, cultura, infância, terceira idade e apoio a famílias em situação de vulnerabilidade.
+
+INSTAGRAM:
+https://www.instagram.com/renataabreu.2020/

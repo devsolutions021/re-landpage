@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------- fontes */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proximanova-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proximanova-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proximanova-800.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proximanova-900.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------ design tokens */
+@theme {
+  --font-sans:
+    'Proxima Nova', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Proxima Nova', ui-sans-serif, system-ui, sans-serif;
+
+  /* Paleta oficial da campanha */
+  --color-roxo-1: oklch(28.7% 0.077 298.6); /* #3E275A */
+  --color-roxo-2: oklch(34.3% 0.106 309.6); /* #4D2A6D */
+  --color-rosa: oklch(53.1% 0.149 334); /* #9D3378 */
+  --color-lilas: oklch(91.7% 0.023 317.1); /* #EBE0EE */
+  --color-lilas-muted: oklch(59.5% 0.052 313.5); /* #8B7A99 */
+
+  --shadow-card: 0 12px 40px -20px color-mix(in oklab, var(--color-roxo-1) 60%, transparent);
+  --shadow-rosa: 0 10px 30px -8px color-mix(in oklab, var(--color-rosa) 55%, transparent);
+
+  --ease-brand: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@utility bg-gradient-roxo {
+  background-image: linear-gradient(135deg, var(--color-roxo-1), var(--color-roxo-2));
+}
+
+/* Títulos de seção: um só tamanho fluido, usado em todas as seções. */
+@utility title-section {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-size: clamp(1.625rem, 1.15rem + 2.1vw, 2.5rem);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-roxo-1);
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    background: var(--color-rosa);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-rosa);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
