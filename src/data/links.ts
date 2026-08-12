@@ -18,12 +18,12 @@ export const LINKS = {
  * pode ser removido sem quebrar o link.
  */
 export const POSTS_INSTAGRAM: string[] = [
-  'https://www.instagram.com/p/DZxztZRvro1/?igsh=MTdpM3ozd2RpdWl1eQ==',
-  'https://www.instagram.com/p/DZxzvw1P_NA/?igsh=cjB6YmltbnUzcDFo',
-  'https://www.instagram.com/p/DZxz2nXv3bd/?igsh=MWQ0aWRrMG5lYXZoMQ==',
-  'https://www.instagram.com/p/DbitMhtPgAX/?igsh=cTI2bGp4cW5uMnpm',
-  'https://www.instagram.com/reel/DbVwSySPy9D/?igsh=YzI5cHkxbWlvZXFq',
-  'https://www.instagram.com/reel/DbDmGKAPlcn/?igsh=bGk2aGJia2d3N2dp',
+  'https://www.instagram.com/p/DZxztZRvro1/',
+  'https://www.instagram.com/p/DZxzvw1P_NA/',
+  'https://www.instagram.com/p/DZxz2nXv3bd/',
+  'https://www.instagram.com/p/DbitMhtPgAX/',
+  'https://www.instagram.com/reel/DbVwSySPy9D/',
+  'https://www.instagram.com/reel/DbDmGKAPlcn/',
 ];
 
 /** Reels ganham ícone de play no lugar do ícone do Instagram. */
