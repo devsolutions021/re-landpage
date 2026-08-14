@@ -19,21 +19,17 @@ export function Sobre() {
           </Reveal>
 
           <Reveal delay={0.12}>
-            <div className="from-roxo-2 to-roxo-1 relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-[2rem] bg-gradient-to-b shadow-[var(--shadow-card)] md:max-w-none">
-              <span
-                aria-hidden="true"
-                className="bg-rosa/35 absolute -top-10 -right-10 size-48 rounded-full blur-3xl"
-              />
+            <div className="bg-lilas-muted/20 relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-[2rem] shadow-[var(--shadow-card)] md:max-w-none">
               {/* Recorte 4:5 já gerado com folga acima da cabeça — o card tem a mesma
                   proporção, então object-cover não corta nada. */}
               <img
-                src="/img/renata-retrato.v1.webp"
+                src="/img/sobre.v1.webp"
                 alt="Renata Abreu em retrato institucional"
                 width={720}
                 height={900}
                 loading="lazy"
                 decoding="async"
-                className="relative size-full object-cover"
+                className="size-full object-cover"
               />
             </div>
           </Reveal>

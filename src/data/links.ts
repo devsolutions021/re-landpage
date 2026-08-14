@@ -28,3 +28,27 @@ export const POSTS_INSTAGRAM: string[] = [
 
 /** Reels ganham ícone de play no lugar do ícone do Instagram. */
 export const ehReel = (url: string) => url.includes('/reel/');
+
+/** O código do post na URL: .../p/DZxztZRvro1/ -> "DZxztZRvro1". */
+export const codigoDoPost = (url: string) => url.match(/\/(?:p|reel)\/([^/?]+)/)?.[1] ?? '';
+
+/**
+ * Capas da seção de redes. Para adicionar ou trocar uma, basta soltar o arquivo em
+ * `src/assets/img/posts/` com o nome igual ao código do post (ex.: `DZxztZRvro1.webp`) —
+ * a associação com o link acontece sozinha, sem mexer em código.
+ */
+const arquivosDeCapa = import.meta.glob('../assets/img/posts/*.{webp,jpg,jpeg,png}', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, string>;
+
+const capasPorCodigo = new Map(
+  Object.entries(arquivosDeCapa).map(([caminho, url]) => [
+    caminho.split('/').pop()!.replace(/\.\w+$/, ''),
+    url,
+  ]),
+);
+
+/** `undefined` quando ainda não existe capa para o post — o card cai no visual da marca. */
+export const capaDoPost = (url: string) => capasPorCodigo.get(codigoDoPost(url));

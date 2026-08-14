@@ -1,7 +1,7 @@
 import * as m from 'motion/react-m';
 import { Icon } from './Icon';
 import { Reveal, RevealGroup, itemVariants, BotaoContorno } from './ui';
-import { LINKS, POSTS_INSTAGRAM, ehReel } from '@/data/links';
+import { LINKS, POSTS_INSTAGRAM, ehReel, capaDoPost } from '@/data/links';
 import marca from '@/assets/img/marca-stacked.svg';
 
 export function Redes() {
@@ -18,6 +18,7 @@ export function Redes() {
         <RevealGroup className="mt-9 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3" step={0.06}>
           {POSTS_INSTAGRAM.map((url, i) => {
             const reel = ehReel(url);
+            const capa = capaDoPost(url);
             return (
               <m.a
                 key={url}
@@ -27,17 +28,36 @@ export function Redes() {
                 rel="noopener noreferrer"
                 className="bg-gradient-roxo group text-lilas/70 relative flex aspect-square items-center justify-center overflow-hidden rounded-2xl shadow-[var(--shadow-card)]"
               >
-                <span
-                  aria-hidden="true"
-                  className="bg-rosa/40 absolute -right-8 -bottom-8 size-32 rounded-full blur-2xl transition-transform duration-500 group-hover:scale-150"
-                />
-                <img
-                  src={marca}
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  className="absolute inset-0 m-auto w-1/2 opacity-15 transition-transform duration-500 group-hover:scale-105"
-                />
+                {capa ? (
+                  <>
+                    <img
+                      src={capa}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      className="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    {/* Escurece o topo para o selo de Instagram/reel não sumir na foto. */}
+                    <span
+                      aria-hidden="true"
+                      className="from-roxo-1/55 absolute inset-0 bg-gradient-to-b to-transparent to-28% transition-opacity duration-300 group-hover:opacity-70"
+                    />
+                  </>
+                ) : (
+                  <>
+                    <span
+                      aria-hidden="true"
+                      className="bg-rosa/40 absolute -right-8 -bottom-8 size-32 rounded-full blur-2xl transition-transform duration-500 group-hover:scale-150"
+                    />
+                    <img
+                      src={marca}
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      className="absolute inset-0 m-auto w-1/2 opacity-15 transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </>
+                )}
                 <span className="border-lilas/25 bg-roxo-1/40 group-hover:bg-rosa absolute top-3 right-3 flex size-9 items-center justify-center rounded-full border backdrop-blur-sm transition-colors duration-300 group-hover:text-white">
                   <Icon name={reel ? 'play' : 'instagram'} className="size-4" />
                 </span>
