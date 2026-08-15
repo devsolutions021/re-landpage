@@ -21,7 +21,7 @@ export const POSTS_INSTAGRAM: string[] = [
   'https://www.instagram.com/p/DZxztZRvro1/',
   'https://www.instagram.com/p/DZxzvw1P_NA/',
   'https://www.instagram.com/p/DZxz2nXv3bd/',
-  'https://www.instagram.com/p/DbitMhtPgAX/',
+  'https://www.instagram.com/reel/DbejkVhvxzT/',
   'https://www.instagram.com/reel/DbVwSySPy9D/',
   'https://www.instagram.com/reel/DbDmGKAPlcn/',
 ];

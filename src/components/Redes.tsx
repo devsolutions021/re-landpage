@@ -29,20 +29,15 @@ export function Redes() {
                 className="bg-gradient-roxo group text-lilas/70 relative flex aspect-square items-center justify-center overflow-hidden rounded-2xl shadow-[var(--shadow-card)]"
               >
                 {capa ? (
-                  <>
-                    <img
-                      src={capa}
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                      className="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    {/* Escurece o topo para o selo de Instagram/reel não sumir na foto. */}
-                    <span
-                      aria-hidden="true"
-                      className="from-roxo-1/55 absolute inset-0 bg-gradient-to-b to-transparent to-28% transition-opacity duration-300 group-hover:opacity-70"
-                    />
-                  </>
+                  /* As capas são recortes da própria grade do Instagram e já trazem o
+                     selo de reel no canto — por isso o card não desenha outro em cima. */
+                  <img
+                    src={capa}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 ) : (
                   <>
                     <span
@@ -56,11 +51,15 @@ export function Redes() {
                       loading="lazy"
                       className="absolute inset-0 m-auto w-1/2 opacity-15 transition-transform duration-500 group-hover:scale-105"
                     />
+                    <span className="border-lilas/25 bg-roxo-1/40 group-hover:bg-rosa absolute top-3 right-3 flex size-9 items-center justify-center rounded-full border backdrop-blur-sm transition-colors duration-300 group-hover:text-white">
+                      <Icon name={reel ? 'play' : 'instagram'} className="size-4" />
+                    </span>
                   </>
                 )}
-                <span className="border-lilas/25 bg-roxo-1/40 group-hover:bg-rosa absolute top-3 right-3 flex size-9 items-center justify-center rounded-full border backdrop-blur-sm transition-colors duration-300 group-hover:text-white">
-                  <Icon name={reel ? 'play' : 'instagram'} className="size-4" />
-                </span>
+                <span
+                  aria-hidden="true"
+                  className="bg-rosa/0 group-hover:bg-rosa/20 absolute inset-0 transition-colors duration-300"
+                />
                 <span className="sr-only">
                   {reel ? 'Reel' : 'Publicação'} {i + 1} no Instagram de Renata Abreu
                 </span>

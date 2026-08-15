@@ -4,6 +4,7 @@ import * as m from 'motion/react-m';
 import { Icon } from './Icon';
 import { Reveal, RevealGroup, itemVariants } from './ui';
 import { PROJETOS, PROJETOS_TEMA } from '@/data/site';
+import fotoEscuta from '@/assets/img/secoes/escuta.webp';
 
 const VISIVEIS = 4;
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -15,14 +16,30 @@ export function Projetos() {
   return (
     <section id="projetos" className="bg-roxo-1 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <Reveal>
-          <h2 className="title-section max-w-2xl text-balance text-white">
-            O que ainda está em construção, e não vai parar.
-          </h2>
-          <p className="text-rosa mt-4 text-sm font-extrabold tracking-[0.14em] uppercase">
-            {PROJETOS_TEMA}
-          </p>
-        </Reveal>
+        {/* Foto ao lado do título: a seção é uma parede de texto e o lado direito
+            do cabeçalho estava vazio. */}
+        <div className="grid items-center gap-8 md:grid-cols-[1.15fr_0.85fr]">
+          <Reveal>
+            <h2 className="title-section text-balance text-white">
+              O que ainda está em construção, e não vai parar.
+            </h2>
+            <p className="text-rosa mt-4 text-sm font-extrabold tracking-[0.14em] uppercase">
+              {PROJETOS_TEMA}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.12}>
+            <img
+              src={fotoEscuta}
+              alt="Renata Abreu conversando de perto com uma eleitora"
+              width={492}
+              height={545}
+              loading="lazy"
+              decoding="async"
+              className="aspect-[5/4] w-full rounded-2xl object-cover shadow-[var(--shadow-card)]"
+            />
+          </Reveal>
+        </div>
 
         <RevealGroup className="mt-8 grid gap-4 md:grid-cols-2" step={0.06}>
           {PROJETOS.slice(0, VISIVEIS).map((p) => (

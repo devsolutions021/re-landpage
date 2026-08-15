@@ -35,18 +35,31 @@ export function Sobre() {
           </Reveal>
         </div>
 
-        <RevealGroup className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Duas colunas em vez de quatro: cada card precisa de largura para o número
+            respirar ao lado da foto, que sangra até a borda direita. */}
+        <RevealGroup className="mt-12 grid gap-4 sm:grid-cols-2">
           {NUMEROS.map((n) => (
             <m.div
               key={n.label}
               variants={itemVariants}
-              className="h-full rounded-2xl bg-white p-6 shadow-[var(--shadow-card)] transition-transform duration-300 hover:-translate-y-1"
+              className="group flex h-full overflow-hidden rounded-2xl bg-white shadow-[var(--shadow-card)] transition-transform duration-300 hover:-translate-y-1"
             >
-              <Icon name={n.icone} className="text-rosa size-6" />
-              <p className="text-rosa mt-4 text-4xl font-black tracking-tight tabular-nums">
-                <Contador valor={n.valor} />
-              </p>
-              <p className="text-lilas-muted mt-1 text-sm leading-snug">{n.label}</p>
+              <div className="flex-1 p-6">
+                <Icon name={n.icone} className="text-rosa size-6" />
+                <p className="text-rosa mt-4 text-4xl font-black tracking-tight tabular-nums">
+                  <Contador valor={n.valor} />
+                </p>
+                <p className="text-lilas-muted mt-1 text-sm leading-snug text-balance">{n.label}</p>
+              </div>
+              <img
+                src={n.foto}
+                alt={n.alt}
+                width={320}
+                height={400}
+                loading="lazy"
+                decoding="async"
+                className="w-24 shrink-0 self-stretch object-cover transition-transform duration-500 group-hover:scale-105 sm:w-28"
+              />
             </m.div>
           ))}
         </RevealGroup>

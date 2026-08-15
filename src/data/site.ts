@@ -23,20 +23,49 @@ export const SOBRE = {
   titulo: 'Uma trajetória de trabalho, não de promessas.',
   paragrafos: [
     'Eu sou a Renata Abreu. Nasci em São Paulo, sou advogada e empresária e, em 2015, cheguei à Câmara dos Deputados com uma certeza: a política só faz sentido quando melhora a vida das pessoas.',
-    'Sou filha do deputado José Masci de Abreu e da dona Cristina, que, juntos, fundaram o Centro de Tradições Nordestinas (CTN), em São Paulo. Cresci acompanhando de perto a trajetória do meu pai na política e o trabalho dos meus pais à frente do CTN. Foi ali que aprendi, desde cedo, que fazer política é estar perto das pessoas, ouvir suas histórias e trabalhar para transformar suas vidas.',
+    'Sou mãe do Fê, Rafa e José, casada com Gabriel Abreu e filha do deputado José Masci de Abreu e da dona Cristina, que, juntos, fundaram o Centro de Tradições Nordestinas (CTN), em São Paulo. Cresci acompanhando de perto a trajetória do meu pai na política e o trabalho dos meus pais à frente do CTN. Foi ali que aprendi, desde cedo, que fazer política é estar perto das pessoas, ouvir suas histórias e trabalhar para transformar suas vidas.',
     'Segui esse caminho e fundei o Podemos, um dos partidos que mais crescem no país. E tenho muito orgulho de ser a única mulher a presidir um partido político no Brasil.',
     'Hoje, estou no terceiro mandato como deputada federal, eleita com mais de 180 mil votos. Já apresentei mais de 700 propostas e 7 delas viraram leis federais.',
     'E é isso que me move todos os dias: transformar boas ideias em ações que protegem as mulheres, as pessoas com deficiência e as vítimas, fortalecem a saúde e a educação e defendem a vida e os direitos de quem mais precisa.',
   ],
 } as const;
 
-export type Numero = { icone: IconName; valor: string; label: string };
+import fotoEleita from '@/assets/img/numeros/eleita.webp';
+import fotoPropostas from '@/assets/img/numeros/propostas.webp';
+import fotoLeis from '@/assets/img/numeros/leis.webp';
+import fotoPresidente from '@/assets/img/numeros/presidente.webp';
+
+export type Numero = { icone: IconName; valor: string; label: string; foto: string; alt: string };
 
 export const NUMEROS: Numero[] = [
-  { icone: 'vote', valor: '3x', label: 'Eleita deputada federal por SP' },
-  { icone: 'file', valor: '+700', label: 'Propostas legislativas apresentadas' },
-  { icone: 'check', valor: '7', label: 'Leis federais sancionadas' },
-  { icone: 'landmark', valor: '1ª', label: 'Única mulher a presidir um partido político no Brasil!' },
+  {
+    icone: 'vote',
+    valor: '3x',
+    label: 'Eleita deputada federal por SP',
+    foto: fotoEleita,
+    alt: 'Renata Abreu discursando em um evento de campanha',
+  },
+  {
+    icone: 'file',
+    valor: '+700',
+    label: 'Propostas legislativas apresentadas',
+    foto: fotoPropostas,
+    alt: 'Renata Abreu reunida com deputados no Congresso Nacional',
+  },
+  {
+    icone: 'check',
+    valor: '7',
+    label: 'Leis federais sancionadas',
+    foto: fotoLeis,
+    alt: 'Renata Abreu com crianças em uma atividade no CTN',
+  },
+  {
+    icone: 'landmark',
+    valor: '1ª',
+    label: 'Única mulher a presidir um partido político no Brasil!',
+    foto: fotoPresidente,
+    alt: 'Renata Abreu cercada de crianças em ação social no CTN',
+  },
 ];
 
 export type IconName =
@@ -65,6 +94,13 @@ export type IconName =
   | 'close';
 
 export type Pauta = { icone: IconName; titulo: string; texto: string };
+
+/** Fala dela publicada na revista da campanha (página 03). */
+export const CITACAO = {
+  texto:
+    'A política é a grande ferramenta de transformação social. Que Deus abençoe nosso Brasil para que as pessoas nunca desistam da política. Se os bons não participarem da política, os ruins participarão.',
+  autora: 'Renata Abreu',
+} as const;
 
 export const PAUTAS_TITULO = 'As causas que guiam o nosso trabalho';
 

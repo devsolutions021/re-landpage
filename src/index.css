@@ -29,6 +29,14 @@
   font-style: normal;
   font-display: swap;
 }
+/* Só a citação usa itálico — sem esta face o navegador falsearia a inclinação. */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proximanova-900-italic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
 
 /* ------------------------------------------------------------ design tokens */
 @theme {

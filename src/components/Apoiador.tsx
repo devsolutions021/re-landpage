@@ -3,15 +3,30 @@ import { Icon } from './Icon';
 import { Reveal, RevealGroup, itemVariants, BotaoRosa, BotaoContorno } from './ui';
 import { APOIADOR, CTA } from '@/data/site';
 import { LINKS } from '@/data/links';
+import fotoComunidade from '@/assets/img/secoes/comunidade.webp';
 
 export function Apoiador() {
   return (
     <section id="apoiador" className="bg-roxo-2 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <Reveal className="max-w-2xl">
-          <h2 className="title-section text-balance text-white">{APOIADOR.titulo}</h2>
-          <p className="text-lilas mt-4 text-base leading-relaxed">{APOIADOR.texto}</p>
-        </Reveal>
+        <div className="grid items-center gap-8 md:grid-cols-[1.15fr_0.85fr]">
+          <Reveal>
+            <h2 className="title-section text-balance text-white">{APOIADOR.titulo}</h2>
+            <p className="text-lilas mt-4 text-base leading-relaxed">{APOIADOR.texto}</p>
+          </Reveal>
+
+          <Reveal delay={0.12}>
+            <img
+              src={fotoComunidade}
+              alt="Renata Abreu cercada por crianças em uma ação na comunidade"
+              width={640}
+              height={529}
+              loading="lazy"
+              decoding="async"
+              className="aspect-[5/4] w-full rounded-2xl object-cover shadow-[var(--shadow-card)]"
+            />
+          </Reveal>
+        </div>
 
         <RevealGroup className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {APOIADOR.cards.map((c) => (

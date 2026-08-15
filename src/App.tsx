@@ -2,6 +2,8 @@ import { LazyMotion, domAnimation } from 'motion/react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Sobre } from './components/Sobre';
+import { Mosaico } from './components/Mosaico';
+import { Citacao } from './components/Citacao';
 import { Pautas } from './components/Pautas';
 import { Leis } from './components/Leis';
 import { Apoiador } from './components/Apoiador';
@@ -19,6 +21,8 @@ export default function App() {
       <main>
         <Hero />
         <Sobre />
+        <Mosaico />
+        <Citacao />
         <Pautas />
         <Leis />
         <Apoiador />
