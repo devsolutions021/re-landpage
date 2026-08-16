@@ -4,11 +4,14 @@
  */
 
 export const LINKS = {
-  /** TODO: trocar pelo número real. Formato: https://wa.me/55DDNNNNNNNNN */
-  whatsapp: 'https://wa.me/55XXXXXXXXXXX',
+  whatsapp: 'https://wa.me/5511941791919',
   instagram: 'https://www.instagram.com/renataabreu.2020/',
   siteOficial: 'https://renataabreuoficial.com.br',
+  email: 'mailto:contato@renataabreu2020.com.br',
 } as const;
+
+/** Mostrado ao usuário; o `mailto:` fica em LINKS.email. */
+export const EMAIL = 'contato@renataabreu2020.com.br';
 
 /**
  * Publicações que aparecem na seção "Acompanhe de perto cada passo do mandato",

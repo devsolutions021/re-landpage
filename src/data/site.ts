@@ -1,3 +1,8 @@
+import fotoEleita from '@/assets/img/numeros/eleita.webp';
+import fotoPropostas from '@/assets/img/numeros/propostas.webp';
+import fotoLeis from '@/assets/img/numeros/leis.webp';
+import fotoPresidente from '@/assets/img/numeros/presidente.webp';
+
 // Os links externos ficam em `./links.ts` — este arquivo cuida só do conteúdo.
 
 export const CTA = {
@@ -29,11 +34,6 @@ export const SOBRE = {
     'E é isso que me move todos os dias: transformar boas ideias em ações que protegem as mulheres, as pessoas com deficiência e as vítimas, fortalecem a saúde e a educação e defendem a vida e os direitos de quem mais precisa.',
   ],
 } as const;
-
-import fotoEleita from '@/assets/img/numeros/eleita.webp';
-import fotoPropostas from '@/assets/img/numeros/propostas.webp';
-import fotoLeis from '@/assets/img/numeros/leis.webp';
-import fotoPresidente from '@/assets/img/numeros/presidente.webp';
 
 export type Numero = { icone: IconName; valor: string; label: string; foto: string; alt: string };
 
@@ -78,10 +78,7 @@ export type IconName =
   | 'graduation'
   | 'paw'
   | 'eye'
-  | 'accessibility'
-  | 'users'
   | 'share'
-  | 'megaphone'
   | 'usersRound'
   | 'messageHeart'
   | 'handHeart'
@@ -94,6 +91,21 @@ export type IconName =
   | 'close';
 
 export type Pauta = { icone: IconName; titulo: string; texto: string };
+
+/**
+ * Identificação obrigatória de propaganda eleitoral. Confira com a assessoria
+ * jurídica antes de publicar — CNPJ e endereço têm de bater com o registro.
+ */
+export const RODAPE = {
+  selo: 'Propaganda Eleitoral',
+  eleicao: 'Eleição 2026',
+  candidata: 'Renata Hellmeister de Abreu Melo',
+  cargo: 'Deputado Federal',
+  partido: 'Podemos — PODE',
+  cnpj: '68.492.039/0001-07',
+  endereco: 'Rua Alves Pontual, 115 — Granja Julieta',
+  cidade: 'São Paulo — SP, 04722-000',
+} as const;
 
 /** Fala dela publicada na revista da campanha (página 03). */
 export const CITACAO = {
